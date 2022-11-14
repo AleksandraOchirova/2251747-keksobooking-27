@@ -121,6 +121,7 @@ const createObj = (el, index) => ({
   location: createLoc(),
 });
 
-const objects = Array.from({length: OFFERSCOUNT}, createObj);
+const objects = () =>
+  Array.from({length: OFFERSCOUNT}, createObj);
 
-
+objects();
